@@ -1,0 +1,29 @@
+{
+  "name": "str3-function-shock",
+  "version": "1.0.0",
+  "description": "- A `tasks` mappában mindent megtalálsz, az ott lévő fájlokban vannak  \r az instrukciók a megoldáshoz és a teszteléshez is.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test01",
+    "test01": "node --experimental-vm-modules --no-warnings ./node_modules/jest/bin/jest __tests__/01_function_syntax.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strukturavaltas-03-Frontend-2022/str3-function-shock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strukturavaltas-03-Frontend-2022/str3-function-shock/issues"
+  },
+  "homepage": "https://github.com/Strukturavaltas-03-Frontend-2022/str3-function-shock#readme",
+  "dependencies": {
+    "@types/jest": "^28.1.7",
+    "jest": "^28.1.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5"
+  }
+}
