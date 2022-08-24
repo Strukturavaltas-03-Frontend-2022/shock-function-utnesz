@@ -150,6 +150,15 @@ const getProductDescrition = (product) => {
  * @desc EXPORTÁLNI KELL A FÜGGVÉNYT!
  */
 
+const getBio = (member) => {
+    return `${member.name[0].toUpperCase() + member.name.slice(1) }, ${member.age} years old, live in: ${member.city}.`
+
+}
+
+export {
+    getBio
+} 
+
 
 
 /**
@@ -166,6 +175,7 @@ const getProductDescrition = (product) => {
  */
 const getMemberDesc = (member = {name: 'jimmy', birthYear: 2000, city: 'SF'}) => {
     const age = new Date().getFullYear() - member.birthYear;
+    return `${member.name[0].toUpperCase() + member.name.slice(1)}, ${age} years old, live in: ${member.city}.`
 }
 
 /**
@@ -182,6 +192,17 @@ const getMemberDesc = (member = {name: 'jimmy', birthYear: 2000, city: 'SF'}) =>
  * <type> = az autó típusa nagy kezdőbetűvel
  * @desc EXPORTÁLNI KELL A FÜGGVÉNYT!
  */
+
+
+const getCarDetails = (car = { manufacturer: 'ford', year: 2010, type: 'fiesta' }) => {
+    const age = new Date().getFullYear() - car.year;
+    return `${car.manufacturer[0].toUpperCase() + car.manufacturer.slice(1)}, ${age} years old, type: ${car.type[0].toUpperCase()+car.type.slice(1)}.`
+
+}
+
+export {
+    getCarDetails
+}
 
 
 export {
