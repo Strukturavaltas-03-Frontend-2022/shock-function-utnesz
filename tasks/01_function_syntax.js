@@ -31,7 +31,7 @@ function add(num1, num2) {
  * @returns {string} - a kapott üzenet.
  */
 function logTheString(message) {
-    return;
+    return message;
 }
 
 /**
@@ -43,7 +43,7 @@ function logTheString(message) {
  * @desc Példa a név beszúrására: `Howdy ${userName}!`
  */
 function getGreeting(name) {
-    return;
+    return `Hello ${name}!`;
 }
 
 /**
@@ -54,8 +54,8 @@ function getGreeting(name) {
  * @returns {string} `Hello <name>!` kifejezés, <name> = name nagy kezdőbetűvel.
  */
 function getTitleGreeting(name) {
-    const titleCaseName = name[0].toUpperCase() + name.slice(1);
-    return;
+    const titleCaseName = `Hello ${name[0].toUpperCase() + name.slice(1)}!`;
+    return titleCaseName;
 }
 
 /**
@@ -66,7 +66,7 @@ function getTitleGreeting(name) {
  * @returns {string} `Product: <name>!`, <name> = productName nagy kezdőbetűvel.
  */
 function getProductDetails(productName) {
-    // 
+    return `Product: ${productName[0].toUpperCase() + productName.slice(1)}!`
 }
 
 /**
@@ -78,7 +78,7 @@ function getProductDetails(productName) {
  */
 const getBruttoPrice = function(price) {
     const bruttoPrice = price * 1.27;
-    return;
+    return bruttoPrice;
 }
 
 /**
@@ -91,7 +91,7 @@ const getBruttoPrice = function(price) {
  */
 const getRoundedBruttoPrice = function(price) {
     const bruttoPrice = Math.round(price * 1.27);
-    return;
+    return bruttoPrice;
 }
 
 /**
@@ -103,7 +103,8 @@ const getRoundedBruttoPrice = function(price) {
  * @returns {number} a price 1.35-szöröse, egészre kerekítve.
  */
 const getSellPrice = function(price) {
-    // 
+        const taxPrice = Math.round(price * 1.35);
+        return taxPrice;
 }
 
 /**
@@ -115,6 +116,8 @@ const getSellPrice = function(price) {
  * @returns {number} a price 1.35-szörösének a 0.9-szerese, egészre kerekítve.
  */
 const getActionPrice = function(price) {
+    const taxPrice = Math.round((price * 1.35) * 0.9);
+        return taxPrice;
     // 
 }
 
@@ -128,9 +131,11 @@ const getActionPrice = function(price) {
  * <price> = a product.price 1.35-szöröse kerekítve
  * <stock> = a product.stock
  */
-const getProductDescrition = product => {
-    // 
+const getProductDescrition = (product) => {
+   return `${product.name[0].toUpperCase() + product.name.slice(1)}, $${Math.round(product.price * 1.35)}, in stock: ${product.stock}`
+      
 }
+
 
 /**
  * 10. feladat
