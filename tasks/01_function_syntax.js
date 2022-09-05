@@ -102,9 +102,15 @@ const getRoundedBruttoPrice = function (price) {
  * @param {number} price Egy termék ára.
  * @returns {number} a price 1.35-szöröse, egészre kerekítve.
  */
+<<<<<<< HEAD
 const getSellPrice = function (price) {
     const taxPrice = Math.round(price * 1.35);
     return taxPrice;
+=======
+const getSellPrice = function(price) {
+        const taxPrice = Math.round(price * 1.35);
+        return taxPrice;
+>>>>>>> 0d3ce7f5682d77f94791399cb849287dcede99fd
 }
 
 /**
@@ -115,9 +121,15 @@ const getSellPrice = function (price) {
  * @param {number} price Egy termék ára.
  * @returns {number} a price 1.35-szörösének a 0.9-szerese, egészre kerekítve.
  */
+<<<<<<< HEAD
 const getActionPrice = function (price) {
     const taxPrice = Math.round((price * 1.35) * 0.9);
     return taxPrice;
+=======
+const getActionPrice = function(price) {
+    const taxPrice = Math.round((price * 1.35) * 0.9);
+        return taxPrice;
+>>>>>>> 0d3ce7f5682d77f94791399cb849287dcede99fd
     // 
 }
 
@@ -132,9 +144,17 @@ const getActionPrice = function (price) {
  * <stock> = a product.stock
  */
 const getProductDescrition = (product) => {
+<<<<<<< HEAD
     return `${product.name[0].toUpperCase() + product.name.slice(1)}, $${Math.round(product.price * 1.35)}, in stock: ${product.stock}`
 
 }
+=======
+   return `${product.name[0].toUpperCase() + product.name.slice(1)}, $${Math.round(product.price * 1.35)}, in stock: ${product.stock}`
+      
+}
+
+
+>>>>>>> 0d3ce7f5682d77f94791399cb849287dcede99fd
 /**
  * 10. feladat
  * @todo Pótold a hiányzó részeket!
